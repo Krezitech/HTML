@@ -1,0 +1,17 @@
+.container{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 10px;
+}
+
+.box{background: slateblue;
+padding: 10px;
+color: #fff;
+text-align: center;}
+
+.box1{
+    /* grid-column: 2/3 ;
+    grid-row: 1/7; */
+    grid-area: 1/2/7/3 ;
+} 

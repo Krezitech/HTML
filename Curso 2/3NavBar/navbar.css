@@ -1,0 +1,41 @@
+.nav-enlace{
+    background: salmon;
+    color: white;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+}
+.nav-enlace:hover{
+    background: rosybrown;
+}
+nav{
+    background: rebeccapurple;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.navboton{
+    background: salmon;
+    color: white;
+    padding: 10px;
+    border: 2px solid white;
+display: none;
+
+
+}
+@media (max-width: 600px) {
+  
+    nav{
+        background: black;
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin: 10px 0px;
+    }
+    .navboton{
+        display: inline-block;
+    }
+.desaparece{
+    display: none;
+}
+  }

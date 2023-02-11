@@ -1,0 +1,17 @@
+ h1{background: #5C7AEA;
+/*(margenes especificos)
+           margin-left: 100px;margin-bottom: 100px;*/
+
+/*(margenes a todos lados mismo tamano)
+           margin:100px;*/
+
+/*(margenes 200 arriba y abajo, y 100 derecha izq 
+           margin: 200px 100px;*/
+
+/* Arriba, Derecha, Abajo, Izquierda*/
+           margin: 15px 500px 50px 100px;
+} 
+p{background: #A2CDCD;
+padding: 20px;
+
+}

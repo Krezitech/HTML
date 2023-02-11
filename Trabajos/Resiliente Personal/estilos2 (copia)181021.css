@@ -1,0 +1,486 @@
+/* #################################################################
+####################################################################
+############################ Generales #############################
+####################################################################
+####################################################################  */
+
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.padre{background: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+} 
+
+a{
+    text-decoration: none;
+}
+
+.letmenu{-webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px black;}
+
+/* #################################################################
+####################################################################
+################### Principal, Header, Footer #######################
+####################################################################
+####################################################################  */
+
+.header{
+    background: url(img/head.jpg);
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .menuhead{
+        background: rgba(255, 255, 255, .9);
+        display: flex;
+        flex-flow: row nowrap;
+        height: 110px;
+        align-items: center;  
+        border-bottom: 2px solid rgba(255,255,255,.6);  
+    }
+        .logohead{flex: 1 1 auto;}
+
+            .logohead img{max-height: 120px;}
+        
+        .navhead{flex: 2 1 auto;}
+
+            .navhead a{
+                    -webkit-text-fill-color: white;
+                    -webkit-text-stroke: 1px black;
+                    font-size: 24px;}
+
+            .navhead a:hover{color:rgb(174, 24, 211);}
+
+        .headbot{flex: 1 1 auto;}
+                    
+        .socialhead{flex: 1 1 auto;}
+
+            .socialhead a{color: blue;}
+            
+            .socialhead a:hover{color: yellow;}
+
+
+.letmenu{-webkit-text-fill-color: white;
+                -webkit-text-stroke: 1px black;
+                font-size: 20px;}
+            
+    .menu button:hover{-webkit-text-fill-color: rgb(3, 3, 3);
+                }
+            
+            
+    .menu a:hover{-webkit-text-fill-color: rgb(3, 3, 3);}
+            
+                 .navhead a:hover{
+                        -webkit-text-fill-color: rgb(3, 3, 3);
+                        font-size: 20px;}
+            
+
+.section{
+            background: rgb(0, 0, 0);
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+
+.footer{
+    background: url(img/head.jpg);
+            display: flex;
+            background-position: center;
+            background-attachment: contain;
+            background-size: cover;
+            flex-flow: column nowrap;
+        }
+            .footerin{
+                background: rgba(255, 255, 255, .9);
+                display: flex;
+                flex-flow: row nowrap;
+                height: 110px;
+                align-items: center;  
+            }
+                .logo2{flex: 1 1 auto;}  
+
+                    .logo2 img{max-height: 120px;}  
+                
+                .mapa1{
+                    flex: 1 1 auto;}
+
+                    .mapa1 a{
+                            -webkit-text-fill-color: white;
+                            -webkit-text-stroke: 1px black;
+                            font-size: 20px;}
+    
+                     .mapa1 a:hover{color:rgb(174, 24, 211);}
+                
+                .footbot{flex: 1 1 auto;}
+
+                .social2{flex: 1 1 auto;}
+                    
+                    .social2 a{color: blue;}
+            
+                    .social2 a:hover{color: yellow;}
+                
+                    .footerin a:hover{
+                        -webkit-text-fill-color: rgb(3, 3, 3);
+                        font-size: 20px;}
+/* #################################################################
+####################################################################
+###################  Parte Central Inicio  #########################
+####################################################################
+####################################################################  */
+
+    .inicioprin{
+        background: khaki;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        .tituloprin{
+            background: rgb(60, 33, 182);
+            flex: 1 1 auto;
+            height: 30px;   
+        }
+        .resres{
+            background: rgb(95, 143, 23);
+            flex: 1 1 auto;
+            height: 30px;   
+        }
+
+    
+    .presentacion{
+        background: gainsboro;
+        display: flex;
+        flex-flow: row wrap;
+    }
+        .cuatcuad{
+            background: purple;
+            flex: 1 1 40%;
+            height: 30px;   
+        }
+        
+    .numeralia1{
+        background: orange;
+        display: flex;
+        flex-flow: row nowrap;
+        height: 30px;  
+        flex: 1 1 auto;
+    }
+    
+    .alianza1{
+        background: cyan;
+        display: flex;
+        flex-flow: row nowrap;
+        height: 30px;  
+        flex: 1 1 auto;
+    }
+    
+/* #################################################################
+####################################################################
+###################  Parte Central Quien ###########################
+####################################################################
+####################################################################  */
+.quien{
+    background: rgb(49, 162, 182);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 30px;  
+    flex: 1 1 auto;
+}
+
+
+.introhis{
+    background: rgb(113, 177, 70);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 30px;  
+    flex: 1 1 auto;
+}
+
+.mision{
+    background: rgb(51, 41, 184);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 30px;  
+    flex: 1 1 auto;
+}
+
+.team{
+    background: rgb(206, 138, 11);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 30px;  
+    flex: 1 1 auto;
+}
+
+.beneficios{
+    background: cyan;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 30px;  
+    flex: 1 1 auto;
+}
+
+.alianza2{
+    background: gainsboro;
+    display: flex;
+    flex-flow: column wrap;
+}
+    .ali2{
+        background: purple;
+        flex: 1 1 auto;
+        height: 30px;   
+    }
+
+    .ali2tit{
+        background: rgb(22, 170, 207);
+        flex: 1 1 auto;
+        height: 30px;   
+    }
+
+
+/* #################################################################
+####################################################################
+###################  Parte Central Ejes  ###########################
+####################################################################
+####################################################################  */
+
+
+.ejes{
+    background: rgb(241, 71, 71);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.partmenuejes{
+    background: gainsboro;
+    display: flex;
+    flex-flow: row wrap;
+}
+    .partdivejes{
+        background: purple;
+        flex: 1 1 40%;
+        height: 30px;   
+    }
+    
+
+
+
+/* #################################################################
+####################################################################
+###################  Parte Central Acciones ########################
+####################################################################
+####################################################################  */
+    
+    
+.acciones{
+    background: rgb(216, 59, 59);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.acciontext{
+    background: rgb(169, 185, 21);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.anios{
+    background: gainsboro;
+    display: flex;
+    flex-flow: row wrap;
+}
+    .cuatcuad2{
+        background: purple;
+        flex: 1 1 40%;
+        height: 30px;   
+    }
+
+
+/* #################################################################
+####################################################################
+###################  Parte Central Acciones  2  ####################
+####################################################################
+####################################################################  */
+
+.acciones2{
+    background: khaki;
+    display: flex;
+    flex-flow: column nowrap;
+}   
+
+.actions{
+    background: rgb(47, 194, 194);
+    display: flex;
+}   
+    .participa2{
+       background: rgb(241, 71, 71);
+       flex: 1 1 auto;
+    }
+    .anios2{
+    background: gainsboro;
+    flex: 3 1 40%;
+    display: flex;
+    flex-flow: row wrap;
+
+    
+    }
+        .cuatcuad3{
+        background: purple;
+        flex: 1 1 40%;
+        height: 30px;   
+    }
+
+    .participa2{
+        background: rgb(241, 71, 71);
+flex: 1 1 auto;
+    }
+
+
+
+
+/* #################################################################
+####################################################################
+###################  Parte Central Descargas  ######################
+####################################################################
+####################################################################  */
+
+.des{background:url(img/desc.jpg);}
+
+
+.descargas{
+    background: rgba(22, 141, 22, 0.9);
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;}
+
+    .descargas h2{font-size: 70px;
+    color: white;
+    flex: 1 1 auto;}
+
+
+.desc{
+
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    font-size: 40PX;
+}
+    .newslet{
+        background: url(img/newsletter.png);
+        flex: 1 1 auto;
+    }
+    
+    .icogra{
+        background:url(img/icografia.jpg);
+        flex: 1 1 auto;
+    }
+    .Repo{
+        background: url(img/reportes.jpg);
+        flex: 1 1 auto;
+        
+    }
+
+
+
+/* #################################################################
+####################################################################
+###################  Parte Central Participa  ######################
+####################################################################
+####################################################################  */
+
+.backpart{
+    background: url(img/partbann.jpg);
+}
+
+.participa{
+    background: rgba(255, 255, 255, .5);
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;}
+
+    .participa h2{font-size: 70px;}
+
+.partmenu{
+   display: flex;
+    flex-flow: row wrap;
+}
+    .partdiv{
+   
+        flex: 600 1 auto;
+        height: 900px;   
+    }
+    .partdiv1{
+        background:white;
+        flex: 1 1 auto;
+        height: 900px;   
+    }
+
+
+
+/* #################################################################
+####################################################################
+###################  Parte Central Contacto  #######################
+####################################################################
+####################################################################  */
+.contac{
+    background: url(img/contacto.jpg);
+    align-content: center;
+    text-align: center;
+
+
+}
+
+.contacto{
+    background: rgba(204, 204, 204, 0.7);
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;}
+
+.contactbox{
+    display: flex;
+}
+        
+
+.cont{
+  
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+}
+    .cont a{font-size: 50px;}
+
+    .contdiviz{background: rgba(204, 204, 204, 0.7);}
+
+        .contdiviz p{font-size: 40px;}
+
+.cont2{
+    background: rgb(204, 204, 204);
+    display: flex;
+    flex: 1 1 auto;
+    }
+
+.coredtel{
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 auto;
+}
+
+    
+    .coredtel i{font-size: 70px;}
+
+    .coredtel a{font-size: 50px;}
+
+    .cencont {background: rgba(204, 204, 204, 0.7);flex: 1 1 auto;}
+
+ 
+
+/* #################################################################
+####################################################################
+#########################  Acciones de Eje   #######################
+####################################################################
+####################################################################  */
+
+
+
