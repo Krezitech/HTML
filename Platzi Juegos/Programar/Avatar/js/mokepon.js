@@ -28,17 +28,17 @@ function seleccionarMascotaJugador() {
     let sectionSeleccionarAtaque = document.getElementById('ataque')
     sectionSeleccionarAtaque.style.display = 'flex'
 
-    let inputHipodoge = document.getElementById('hipodoge')
-    let inputCapipepo = document.getElementById('capipepo')
-    let inputRatigueya = document.getElementById('ratigueya')
+    let inputAang = document.getElementById('aang')
+    let inputKorra = document.getElementById('korra')
+    let inputKyoshi = document.getElementById('kyoshi')
     let spanMascotaJugador = document.getElementById('mascota-jugador')
 
-    if (inputHipodoge.checked) {
-        spanMascotaJugador.innerHTML = 'Hipodoge'
-    } else if (inputCapipepo.checked) {
-        spanMascotaJugador.innerHTML = 'Capipepo'
-    } else if (inputRatigueya.checked) {
-        spanMascotaJugador.innerHTML = 'Ratigueya'
+    if (inputAang.checked) {
+        spanMascotaJugador.innerHTML = 'Aang'
+    } else if (inputKorra.checked) {
+        spanMascotaJugador.innerHTML = 'Korra'
+    } else if (inputKyoshi.checked) {
+        spanMascotaJugador.innerHTML = 'Kyoshi'
     } else {
         alert('NO ELEGISTE NINGUNA MASCOTA')
     }
@@ -49,34 +49,34 @@ function seleccionarMascotaEnemigo() {
     let spanMascotaEnemigo = document.getElementById('mascota-enemigo')
 
     if(mascotaAleatoria == 1){
-        spanMascotaEnemigo.innerHTML = 'Hipodoge'
+        spanMascotaEnemigo.innerHTML = 'Aang'
     } else if (mascotaAleatoria == 2) {
-        spanMascotaEnemigo.innerHTML = 'Capipepo'
+        spanMascotaEnemigo.innerHTML = 'Korra'
     } else  {
-        spanMascotaEnemigo.innerHTML = 'Ratigueya'
+        spanMascotaEnemigo.innerHTML = 'Kyoshi'
     }
 }
 function ataqueFuego() {
-    ataqueJugador = 'FUEGO'
+    ataqueJugador = 'Fuego'
     ataqueAleatorioEnemigo()
 }
 function ataqueAgua() {
-    ataqueJugador = 'AGUA'
+    ataqueJugador = 'Agua'
     ataqueAleatorioEnemigo()
 }
 function ataqueTierra() {
-    ataqueJugador = 'TIERRA'
+    ataqueJugador = 'Tierra'
     ataqueAleatorioEnemigo()
 }
 function ataqueAleatorioEnemigo() {
     let ataqueAleatorio = aleatorio(1,3)
 
     if (ataqueAleatorio == 1){
-        ataqueEnemigo = 'FUEGO'
+        ataqueEnemigo = 'Fuego'
     }else if (ataqueAleatorio == 2){
-        ataqueEnemigo = 'AGUA'
+        ataqueEnemigo = 'Agua'
     } else {
-        ataqueEnemigo = 'TIERRA'
+        ataqueEnemigo = 'Tierra'
     }
     combate()
 }
@@ -85,17 +85,17 @@ function combate() {
     let spanVidasEnemigo = document.getElementById('vidas-enemigo')
 
     if (ataqueEnemigo == ataqueJugador) {
-        crearMensaje ("Empate")
-    } else if (ataqueJugador == 'FUEGO' && ataqueEnemigo == 'TIERRA') {
-        crearMensaje ("Ganaste!!!!!")
+        crearMensaje ("Empataron")
+    } else if (ataqueJugador == 'Fuego' && ataqueEnemigo == 'Tierra') {
+        crearMensaje ("Ganaste")
         vidasEnemigo--
         spanVidasEnemigo.innerHTML = vidasEnemigo
-    } else if (ataqueJugador == 'AGUA' && ataqueEnemigo == 'FUEGO') {
-        crearMensaje ("Ganaste!!!!! ")
+    } else if (ataqueJugador == 'Agua' && ataqueEnemigo == 'Fuego') {
+        crearMensaje ("Ganaste")
         vidasEnemigo--
         spanVidasEnemigo.innerHTML = vidasEnemigo
-    } else if (ataqueJugador == 'TIERRA' && ataqueEnemigo == 'AGUA') {
-        crearMensaje ("Ganaste!!!!! ")
+    } else if (ataqueJugador == 'Tierra' && ataqueEnemigo == 'Agua') {
+        crearMensaje ("Ganaste")
         vidasEnemigo--
         spanVidasEnemigo.innerHTML = vidasEnemigo
     } else {
@@ -107,9 +107,9 @@ function combate() {
 }
 function revisarVidas() {
     if (vidasEnemigo == 0){
-        crearMensajeFinal("Felicitaciones Ganaste!!!")
+        crearMensajeFinal("Felicitaciones eres el MEJOR Avatar")
     } else if (vidasJugador == 0){
-        crearMensajeFinal("Lo lamento, perdiste")
+        crearMensajeFinal("NO eres el mejor Avatar")
     }
 }
 function crearMensaje(resultado) {
@@ -144,7 +144,7 @@ function crearMensajeFinal(resultadoFinal) {
     sectionSeleccionarReiniciar.style.display = 'block'
 }
 function reiniciarJuego(){
-    location.reload()    
+    location.reload()
 }
 function aleatorio(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min)

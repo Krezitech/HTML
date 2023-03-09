@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Rubik+Iso&family=Sono:wght@500&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,800&display=swap');
 body {
     font-family: 'Tilt Prism', cursive;
-    background-color: #6096B4;
+    background-color: #495371;
 }
 
 #mascota {
@@ -24,12 +24,14 @@ body {
 
 .tarjetas, .tarjetas-ataques {
     display: flex;
-    gap: 10px;
+    background-color: none ;
+    padding: 10px;
+    align-items: baseline;
 }
 
 .tarjeta-de-mokepon {
-    width: 180px;
-    height: 100px;
+    width: 250px;
+    height: 370px;
     background: #93BFCF;
     padding: 10px;
     box-sizing: border-box;
@@ -39,11 +41,10 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Sono', sans-serif;
-
 }
 
 .tarjeta-de-mokepon img {
-    width: 80px;
+    width: auto;
 }
 
 #boton-mascota {
@@ -54,7 +55,7 @@ body {
     border: 2px solid #EEE9DA;
     color: white;
     font-family: 'Righteous', cursive;
-    /*margin: 20px 0 0 0;                   cualquiera sirve, ya sea los 4 o directamente top-bottom etc*/             
+    /*margin: 20px 0 0 0;                   cualquiera sirve, ya sea los 4 o directamente top-bottom etc*/
     margin-top: 30px;
 }
 
@@ -64,7 +65,7 @@ input {
 
 input:checked + label{
     /* width: 100px; */
-    background-color: #BDCDD6;
+    background-color: #B7B78A;
 }
 
 #ataque{
@@ -73,14 +74,15 @@ input:checked + label{
 }
 
 .boton-de-ataque {
-    background-color: #BDCDD6;
+    background-color: transparent;
     padding: 10px;
     box-sizing: border-box;
-    border-radius: 20px;
     border-color: transparent;
-    width: 100px;
-    color: white;
+    width: 100%;
+    height: 250px;
     font-family: 'Sono', sans-serif;
+    border-radius: 20px;
+    align-items: baseline;
 }
 
 #mensajes {
@@ -103,7 +105,8 @@ input:checked + label{
 
 .ataques {
     display: grid;
-    grid-template-columns: 100px 100px;
+    grid-template-columns:  2fr 2fr;
+
 }
 
 #vidas-jugador, #vidas-enemigo {
@@ -125,3 +128,38 @@ input:checked + label{
         flex-direction: column;
     }
 }
+
+.tamanioavatar {
+    width: 100%;
+    height: 350px;
+}
+
+label:hover {
+    background-color: #B7B78A;
+}
+
+
+
+.ataques-jugador, .ataques-enemigo {
+    background-color: red;
+    width: 50px;
+
+}
+#vidas-jugador, #vidas-enemigo {
+    color: #2192FF;
+    font-size: 20px;
+    width: 50px;
+    background-color: orange;
+}
+#mascota-jugador, #mascota-enemigo {
+    background-color: yellow;
+    font-size: 20px;
+    width: 50px;
+}
+#ataques-Del-Jugador, #ataques-Del-Enemigo {
+    background-color: yellowgreen;
+    font-size: 20px;
+    width: 50px;
+}
+
+
