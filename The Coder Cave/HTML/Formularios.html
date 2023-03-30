@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <nav>
+        <a href="index.html">Index</a>
+        <a href="Formularios.html">Formularios</a>
+        <a href="Noticias.html">Noticias</a>
+    </nav>
+<!-- Formularios   -->
+
+    <!--
+        -<form> es la caja, y luego solo se pone el <input> para agregar la información.
+        -Se debe usar el "id" y el "name" para diferenciarlos
+        -<label> ayuda aponer el nombre de lo que va a ser el "input"
+        -el "for" debe tener el mismo nombre que "name"
+        -el boton se hace con tipo "submit" y en "value" se pone el texto dentro del botón
+        -o bien con "button", y tambien genera otro botton
+        -el "type" es lo que definirá el tipo de "input"
+    -->
+
+    <form>
+        <label for="txtNombre">Nombre:</label><br>
+        <input type="text" id="txtNombre" name="txtNombre"><br>
+        <label for="txtApellido">Apellido:</label><br>
+        <input type="text" id="txtApellido" name="txtApellido"><br><br>
+        <input type="submit" name="botonenviar" id="botonenviar" value="Enviar">
+        <input type="button" name="cancelar" id="cancelar" value="cancelar"><br><br>
+
+    <!-- Radio, hace que solo se puede escoger uno a la vez    -->
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="Femenino" name="genero" value="Femenino">
+        <label for="masculino">Femenino</label><br>
+        <input type="radio" id="Otro" name="genero" value="Otro">
+        <label for="masculino">Otro</label><br><br><br><br>
+    <!-- checkbox, hace que puedas escoger varias casillas al mismo tiempo    -->
+        <input type="checkbox" id="mascota1" name="mascota1" value="Perro">
+        <label for="mascota1">Perro</label><br>
+        <input type="checkbox" id="mascota2" name="mascota2" value="Gato">
+        <label for="mascota2">Gato</label><br>
+        <input type="checkbox" id="mascota3" name="mascota3" value="Capibara">
+        <label for="mascota3">Capibara</label><br><br><br>
+    <!-- select, es una lista de donde se escogerá una cosa    -->
+        <label for="lenguajes" >Elige un lenguaje</label>
+        <select name="lenguajes" id="lenguajes">
+            <option value="C#">C#</option>
+            <option value="Python">Python</option>
+            <option value="Jascript">Jascript</option>
+        </select><br><br>
+    <!-- si se le agrega "multiple", podrá seleccionar varios    -->
+        <label for="lenguajes2" >Elige un lenguaje nuevamente</label>
+        <select name="lenguajes2" id="lenguajes2" multiple>
+            <option value="C#2">C#</option>
+            <option value="Python2">Python</option>
+            <option value="Jascript2">Jascript</option>
+        </select><br><br>
+    <!-- Text Area, puedes poner una cajita para escribir texto libre, se puede modificar el tamaño de la caja    -->
+        <textarea name="" id="" cols="20" rows="10">Poner comentarios aquí</textarea><br><br>
+    <!--"Fieldset" ayuda a delimitar de manera visual lo contenido
+        "legend" pone el "titulo" de la cajita (filedset) -->
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="txtNombre">Nombre:</label><br>
+            <input type="text" id="txtNombre" name="txtNombre"><br>
+            <label for="txtApellido">Apellido:</label><br>
+            <input type="text" id="txtApellido" name="txtApellido"><br><br>
+        </fieldset><br><br><br><br>
+
+    <!--Datalist, genera una lista de sugerencias aunque pueda tener texto libre (type:"text"), y si no se escoge nada, se puede escoger de una lista establecida con "option"     -->
+        <input type="text" list="Navegadores">
+        <datalist id="Navegadores">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Brave">
+            <option value="Opera">
+        </datalist><br><br><br>
+    <!-- date, ayuda a escoger una fecha    -->
+        <input type="date" name="fecha" id="fecha">
+
+
+    </form>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
+

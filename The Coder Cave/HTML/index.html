@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>El título de la Página</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Index</a>
+        <a href="Formularios.html">Formularios</a>
+        <a href="Noticias.html">Noticias</a>
+    </nav>
+<!-- "Headings"
+
+        Van del h1 - h6
+        Y se usan copmo títulos
+
+    -->
+    <h1>Cabecera número 1</h1>
+    <h2>Cabecera número 2</h2>
+    <h3>Cabecera número 3</h3>
+    <h4>Cabecera número 4</h4>
+    <h5>Cabecera número 5</h5>
+    <h6>Cabecera número 6</h6>
+
+    <!-- "Párrafos" se usa la <p>  -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, itaque, inventore incidunt tempora amet ipsum officia fuga corrupti minus dolorem odio velit odit eveniet, quis est dicta rerum. Illo, repellat.
+        </p>
+
+    <!--    Se puede usar "lorem" para hacer un parrafo inventado o bien "lorem10" para generar solo 10 palabras  -->
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel sunt saepe reprehenderit sint numquam.
+        </p>
+
+    <!--  Si se usa "<pre>", se puede usar el formato dado (Sangrías y spaciado) -->
+        <pre>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Saepe minima veritatis dolorum aliquam porro officiis,
+                        unde dicta minus ullam similique mollitia iusto laboriosam vitae rerum debitis pariatur distinctio numquam sint.
+        </pre>
+
+    <!--
+        <b> Es negrita
+        <i> Es itálica
+    -->
+        <p>
+            Lorem ipsum dolor sit <b>consectetur adipisicing</b>  elit. Eveniet dolor <i>libero totam</i> nam placeat <i><b>atque cum</b></i> vel amet voluptatum autem?
+        </p>
+
+    <!--
+        Negrita  tmb puede usarse <strong>
+        Itálica  tmb puede usarse <em>
+
+        la diferencía es que hace más énfasis, por lo que se recomienda más que las otras.
+    -->
+        <p>
+            Lorem ipsum dolor sit, <strong>consectetur adipisicing</strong>amet  elit. <em>Totam ipsa </em>tempore labore inventore architecto tempora, consectetur<em><strong>voluptas odit</strong></em>  maiores vero tenetur iure quaerat beatae recusandae obcaecati consequatur similique vel illum.
+        </p>
+
+    <!--
+        Para resaltar en "amarillo" se usa <mark>
+        Para tachar se usa <del>
+        Para subrayar se usa <ins>
+    -->
+        <p>
+            Lorem ipsum dolor sit amet <mark>consectetur adipisicing</mark> elit. Culpa, eius, doloremque quam rerum illo porro fugiat cum similique <del>dolores</del> unde commodi eveniet harum! <ins>Voluptas repudiandae natus</ins> pariatur voluptatum! Error, ea.
+        </p>
+
+<!-- CITAS -->
+
+    <!--
+        Se utilizan <blockquote> y va como tipo "bloque"
+        Si se utiliza <q> resaltará el texto entre comillas, la diferencia será cuando se usa el CSS usando el formato en <q>
+        Para utililzar otro tipo de cita se usa: <cite> que la pone como itálica
+    -->
+
+    <p>Esto es la cita:</p>
+    <blockquote>Aquí viene la dirección web de la cita</blockquote>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur <q>adipisicing elit. Libero praesentium adipisci eligendi </q>quas! Ipsam, perspiciatis? Dolor aliquam <cite>aliquid possimus officia.</cite> Dolore, odio recusandae? Sint vero illo, autem aspernatur rem voluptates!
+    </p>
+
+    <!--
+        Se usa para marcar información de contacto: <address>, lo pone como itálica también
+        Para hacer un "enter" o "salto de línea" se usa <br>
+        Para hacer líneas de separación se usa <hr>
+        Se pueden usar abreviaturas o bien explicaciones de acrónimos y como explicarlos <abbr>
+    -->
+    <hr>
+    <address>
+        Kreziped.
+        Como generar conocimiento básico.
+        Veracru.
+        México
+    </address>
+    <hr>
+    <address>
+        Kreziped.<br>
+        Como generar conocimiento básico.<br>
+        Veracru.<br>
+        México.<br>
+    </address>
+
+    <p>
+        Lorem <abbr title="Objeto Volador No Identificado">OVNI</abbr> ipsum dolor sit, amet consectetur adipisicing elit. Repellat inventore, earum odit maiores id quidem provident necessitatibus enim dignissimos animi ipsam voluptatibus esse iste aliquam laborum ducimus molestias dicta commodi.
+    </p>
+
+<!-- Hipervínculos  -->
+
+    <!--
+        "a" define un hipervínculo, el texto contendido y el "href", este último da el link a donde navegar y puede ser página interna del mismo sitio
+        Si se agrega "target=blank_" el link se abrirá en otra pestaña nueva
+    -->
+
+    <a href="https://google.com" target="_blank">Google</a> <br>
+
+    <!--
+        "img" Sirve para imagenes
+        "alt" sirve para dar información relativa a la imagen en caso de que esta no aparezca
+        se pueden usar "height y width" para dar tamaño deseado
+        si solo se pone uno, el otro se autoajustará al tamaño
+    -->
+
+    <img src="images/html.png" alt="logo de html" height="100" width="200"> <br>
+
+    <img src="images/html.png" alt="logo de html" height="100" >
+
+
+<!-- Tablas  -->
+
+    <!--
+        Se usa la etiqueta <table> para iniciar una tabla
+            las filas se definen como <tr>  (table row)
+            las columnas se definen como <td> (table data)
+        Para el titulo se usa <Caption>
+        Para las cabeceras se usa <th> (se pone en negritas)
+        Con "colspan", se pueden fusionar columnas en una sola poniendo el número de columnas a ocupar
+        Con "rowspan", pueden ocupar más de una fila
+    -->
+    <br><br><br><br>
+<div>
+    <table>
+        <Caption>Título de la Tabla</Caption>
+        <tr>
+            <th>Cabecera 1</th>
+            <th>Cabecera 2</th>
+            <th>Cabecera 3</th>
+        </tr>
+        <tr>
+            <th>Cabecera 1</th>
+            <th colspan="2">Cabecera 2 y 3</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Cabecera 1</th>
+            <th>Cabecera 2</th>
+            <th>Cabecera 3</th>
+        </tr>
+        <tr>
+            <td>Columna 2</td>
+            <td>Columna 3</td>
+        </tr>
+        <tr>
+            <td colspan="2">Columna 1 y 2</td>
+            <td>Columna 3</td>
+        </tr>
+        <tr>
+            <td>Columna 1</td>
+            <td>Columna 2</td>
+            <td>Columna 3</td>
+        </tr>
+    </table>
+    <br><br><br><br><br>
+
+<!-- Listas   -->
+
+    <!--
+        Listas desordenadas, se expresan coomo <ul> (unordered list)
+        Los elementos de la lista se ponen entre <li>
+        Listas ordenadas, se expresan coomo <ol> (ordered list)
+        Se pueden anidar las listas ordenadas con desordenadas o al revés
+    -->
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <ul>
+        <li>Item 1</li>
+            <ol>
+                <li>Sub-item 1</li>
+                    <ul>
+                        <li>Sub sub item 1</li>
+                        <li>Sub sub item 2</li>
+                        <li>Sub sub item 3</li>
+                    </ul>
+                <li>Sub-item 2</li>
+                <li>Sub-item 3</li>
+            </ol>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</div>
+<!-- Elementos de bloque   -->
+
+    <!--
+        Los contenedores son como cajas en html y se usa <div>, estos, NO afectan el texto o al html en si
+    -->
+    <div>    </div>
+
+
+    <!--
+        Etiqueta "inline", en linea y solo ocupan el ancho q ocupan, o sea solo se usan en lugares especificos para el CSS se usa <span>, estos, NO afectan el texto o al html en si
+    -->
+    <span>    </span>
+    <ul>
+        <li><span> Item 1 </span></li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <p>
+        Lorem ipsum dolor sit amet <span> consectetur adipisicing elit.</span> Modi sequi enim itaque error dolores obcaecati, a aspernatur facilis numquam eius esse necessitatibus! Omnis perspiciatis vero at assumenda, eius veniam. Cum?
+    </p>
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+
+    <!--
+    -->
+</html>
