@@ -3,6 +3,8 @@ let ataqueEnemigo
 let vidasJugador = 3
 let vidasEnemigo = 3
 
+const tres = 3
+
 function iniciarJuego() {
     let sectionSeleccionarAtaque = document.getElementById('ataque')
     sectionSeleccionarAtaque.style.display = 'none'
@@ -71,6 +73,8 @@ function ataqueTierra() {
 function ataqueAleatorioEnemigo() {
     let ataqueAleatorio = aleatorio(1,3)
 
+    //dsdssds
+
     if (ataqueAleatorio == 1){
         ataqueEnemigo = 'FUEGO'
     }else if (ataqueAleatorio == 2){
@@ -78,7 +82,7 @@ function ataqueAleatorioEnemigo() {
     } else {
         ataqueEnemigo = 'TIERRA'
     }
-    combate()
+    combate
 }
 function combate() {
     let spanVidasJugador = document.getElementById('vidas-jugador')
@@ -144,7 +148,7 @@ function crearMensajeFinal(resultadoFinal) {
     sectionSeleccionarReiniciar.style.display = 'block'
 }
 function reiniciarJuego(){
-    location.reload()    
+    location.reload()
 }
 function aleatorio(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min)
