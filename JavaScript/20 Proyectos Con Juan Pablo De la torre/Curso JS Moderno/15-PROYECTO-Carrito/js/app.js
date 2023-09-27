@@ -12,8 +12,15 @@ cargarEventListeners();
 
 function cargarEventListeners(){
      listaCursos.addEventListener('click', agregarCurso);                                       //* Click para agregar un item al carrito
-}
 
+     carrito.addEventListener('click', eliminarCurso);                                         //* Elimina curso
+
+     vaciarCarritoBtn.addEventListener('click', () => {                                        //* Vaciar el carrito
+          articulosCarrito = [];                                                               //* Se borra todo el arreglo
+
+          limpiarHTML();                                                                       //* Se elimina todo el HTML
+      })
+     }
 
 //? Funciones
 
@@ -30,6 +37,17 @@ function agregarCurso (eventoAddCurso) {
      }
 }
 
+function eliminarCurso(elimcurso) {
+     if (elimcurso.target.classList.contains('borrar-curso')) {                                     //* Busca la clase q contiene "borrar curso"
+          const cursoId = elimcurso.target.getAttribute('data-id');                                 //* Asigna el id de lo que se va aborrar
+
+          articulosCarrito = articulosCarrito.filter( cursel => cursel.idCurso !== cursoId);        //* Filtra y reasigna si el curso es difernte
+
+          carritoHTML ();                                                                           //* Iterar sobre el carrito y mostrar en html
+     }
+}
+
+
 //+ Leer contenido HTML al que dimos click y extraer su información
 
 function leerDatosCurso (cursel) {
@@ -40,10 +58,30 @@ function leerDatosCurso (cursel) {
           titulo: cursel.querySelector('h4').textContent,                                      //* Se obtiene el titulo del curso
           precio: cursel.querySelector('.precio span').textContent,                            //* Se obtiene el precio
           idCurso: cursel.querySelector('a').getAttribute('data-id'),                          //* Se obtiene el id del curso
-          cant:1,                                                                              //* La cantidad de cursos
+          cantidad:1                                                                           //* La cantidad de cursos
      }
 
-     articulosCarrito = [...articulosCarrito, infoCurso];                                      //* Agrega elementos al arreglo del carrito con lo anterior
+
+     const existe = articulosCarrito.some( cursel => cursel.idCurso === infoCurso.idCurso);               //* Revisa si un elemento ya existe en el carrito
+
+     if (existe) {
+          // actualizamos cantidad
+
+          const cursos = articulosCarrito.map ( cursel => {
+               if (cursel.idCurso === infoCurso.idCurso) {
+                    cursel.cantidad++;
+                    return cursel;
+               } else {
+                    return cursel;
+               }
+          })
+          articulosCarrito = [...cursos];
+
+     } else {
+          articulosCarrito = [...articulosCarrito, infoCurso];                                      //* Agrega elementos al arreglo del carrito con lo anterior
+     }
+
+
 
      console.log(articulosCarrito);
 
@@ -59,11 +97,25 @@ function carritoHTML () {
 
      articulosCarrito.forEach( (cursel) => {                                                   //* Revisa para todos los cursos seleccionados
 
+     const {imagen, titulo, precio, cantidad, idCurso} = cursel;
+
      const row = document.createElement('tr');                                                 //* Crea una tabla nueva
 
      row.innerHTML = `
      <td>
-          ${cursel.titulo}
+          <img src="${imagen}" with=100px>
+     </td>
+     <td>
+          ${titulo}
+     </td>
+     <td>
+          ${precio}
+     </td>
+     <td>
+          ${cantidad}
+     </td>
+     <td>
+          <a href="#" class="borrar-curso" data-id="${idCurso}">x</a>
      </td>
      `;                                                                                        //* En cada tabla se le agrega lo que está en la tabla
 
@@ -76,7 +128,8 @@ function carritoHTML () {
 
 function limpiarHTML () {
 
-     // contenedorCarrito.innerHTML = '';                                                      //* Forma lenta
+     //*Forma lenta
+     //contenedorCarrito.innerHTML = '';
 
      while(contenedorCarrito.firstChild) {                                                     //* Revisa si hay "hijos" y en caso de q si, los borra
           contenedorCarrito.removeChild(contenedorCarrito.firstChild);
