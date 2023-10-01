@@ -5,25 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Buscador múltiples campos - JS Moderno </title>
-    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 
-    <h1>Buscador de Autos</h1>
+    <h1>Car Searcher</h1>
 
     <div class="contenedor">
-
-        
-
         <form id="buscador">
             <div class="row">
                 <div class="three columns">
-                    <label for="marca">Marca</label>
-                    <select class="u-full-width" id="marca">
-                        <option value="">Seleccione</option>
+                    <label for="brand">Brand</label>
+                    <select class="u-full-width" id="brand">
+                        <option value="">Select</option>
                         <option value="Audi">Audi</option>
                         <option value="BMW">BMW</option>
                         <option value="Mercedes Benz">Mercedes Benz</option>
@@ -33,15 +30,15 @@
                     </select>
                 </div>
                 <div class="three columns">
-                    <label for="year">Año</label>
+                    <label for="year">Year</label>
                     <select class="u-full-width" id="year">
-                        <option value="">Seleccione</option>
+                        <option value="">Select</option>
                     </select>
                 </div>
                 <div class="three columns">
-                    <label for="minimo">Precio Min</label>
-                    <select class="u-full-width" id="minimo">
-                            <option value="">Seleccione</option>
+                    <label for="minp">Min Price</label>
+                    <select class="u-full-width" id="minp">
+                            <option value="">Select</option>
                             <option value="20000">20,000</option>
                             <option value="30000">30,000</option>
                             <option value="40000">40,000</option>
@@ -53,9 +50,9 @@
                     </select>
                 </div>
                 <div class="three columns">
-                    <label for="maximo">Precio Max</label>
-                    <select class="u-full-width" id="maximo">
-                            <option value="">Seleccione</option>
+                    <label for="maxp">Max Price</label>
+                    <select class="u-full-width" id="maxp">
+                            <option value="">Select</option>
                             <option value="20000">20,000</option>
                             <option value="30000">30,000</option>
                             <option value="40000">40,000</option>
@@ -68,37 +65,36 @@
                 </div>
                 <div class="row">
                     <div class="four columns">
-                        <label for="puertas">Puertas</label>
-                        <select class="u-full-width" id="puertas">
-                                <option value="">Seleccione</option>
+                        <label for="transmission">Transmission</label>
+                        <select class="u-full-width" id="transmission">
+                                <option value="">Select</option>
+                                <option value="automatic">Automatic</option>
+                                <option value="manual">Manual</option>
+                        </select>
+                    </div>
+                    <div class="four columns">
+                        <label for="doors">Doors</label>
+                        <select class="u-full-width" id="doors">
+                                <option value="">Select</option>
                                 <option value="2">2</option>
                                 <option value="4">4</option>
                         </select>
                     </div>
                     <div class="four columns">
-                        <label for="transmision">Transmisión</label>
-                        <select class="u-full-width" id="transmision">
-                                <option value="">Seleccione</option>
-                                <option value="automatico">Automática</option>
-                                <option value="manual">Manual</option>
-                        </select>
-                    </div>
-                    <div class="four columns">
                         <label for="color">Color</label>
                         <select class="u-full-width" id="color">
-                                <option value="">Seleccione</option>
-                                <option value="Negro">Negro</option>
-                                <option value="Azul">Azul</option>
-                                <option value="Blanco">Blanco</option>
-                                <option value="Rojo">Rojo</option>
+                                <option value="">Select</option>
+                                <option value="Black">Black</option>
+                                <option value="Blue">Blue</option>
+                                <option value="White">White</option>
+                                <option value="Red">Red</option>
                         </select>
                     </div>
                 </div>
             </div>
         </form>
 
-
-        <h1>Resultados</h1>
+        <h1>Results</h1>
         <div id="resultado"></div>
     </div>
 
@@ -106,6 +102,6 @@
 
     <script src="js/db.js"></script>
     <script src="js/app.js"></script>
-    
+
 </body>
 </html>
