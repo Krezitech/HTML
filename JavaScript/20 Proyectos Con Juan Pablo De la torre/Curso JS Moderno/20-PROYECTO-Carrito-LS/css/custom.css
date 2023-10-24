@@ -32,12 +32,11 @@ header {
     color: white;
     font-weight: bold;
 }
-
 ul {
     list-style: none;
 }
 #hero {
-    background-image:url(../img/hero.jpg);
+    background-image:url(../img/her2.jpeg);
     height: 350px;
     background-size: cover;
 }
@@ -47,7 +46,6 @@ ul {
 .submenu {
     position: relative;
 }
-
 .submenu #carrito{
     display: none;
 }
@@ -55,7 +53,6 @@ ul {
     display: block;
     position: absolute;
     right:0;
-
     top:100%;
     z-index: 1;
     background-color: white;
@@ -72,7 +69,9 @@ ul {
 }
 .contenido-hero {
     margin-top: 80px;
-    color: white;
+    color: rgb(255, 255, 255);
+    text-align:center;
+    -webkit-text-stroke: .5px rgb(255, 255, 255);
 }
 .contenido-hero form {
     position: relative;
@@ -96,17 +95,14 @@ ul {
     background-repeat: no-repeat;
     border:none;
 }
-
-
 .barra {
     padding: 20px 0;
     background: #741d51; /* Old browsers */
-    background: -moz-linear-gradient(left, #741d51 0%, #e44e52 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #741d51 0%,#e44e52 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #741d51 0%,#e44e52 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#741d51', endColorstr='#e44e52',GradientType=1 ); /* IE6-9 */
+    background: -moz-linear-gradient(left, #202dec 0%, #00d9ff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #202dec 0%,#00d9ff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #202dec 0%,#00d9ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#741d51', endColorstr='#00d9ff',GradientType=1 ); /* IE6-9 */
 }
-
 .barra p {
     margin:0;
     color: white;
@@ -133,14 +129,12 @@ ul {
 .icono3 {
     background-image: url(../img/icono3.png);
 }
-
 #lista-cursos .row {
     margin-bottom:20px;
 }
 .agregar-carrito {
     margin:10px 0;
 }
-
 .card {
     text-align: center;
     border: 1px solid #e1e1e1;
@@ -154,8 +148,7 @@ ul {
 .info-card  {
     padding: 10px 20px;
 }
-
-.info-card p, 
+.info-card p,
 .card h4 {
     margin-bottom: 5px;
 }
@@ -168,15 +161,20 @@ ul {
     font-weight: 700;
     font-size: 22px;
 }
-
-
 .footer {
     margin-top: 40px;
     border-top:1px solid #aaa;;
-    padding-top: 40px;   
+    padding-top: 40px;
+    padding: 20px 0;
+    background: #741d51; /* Old browsers */
+    background: -moz-linear-gradient(left, #00d9ff 0%, #202dec 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #00d9ff 0%,#202dec 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #00d9ff 0%,#202dec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#741d51', endColorstr='#202dec',GradientType=1 ); /* IE6-9 */
 }
 .footer .menu a{
 display: block;
 margin-bottom: 10px;
 text-decoration: none;
+color: rgb(255, 255, 255);
 }
